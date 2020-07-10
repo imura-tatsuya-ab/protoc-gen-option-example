@@ -1,0 +1,10 @@
+syntax = "proto3";
+package example;
+
+option go_package = "github.com/imura-tatsuya-ab/protoc-gen-option-example/proto";
+
+import "custom/custom.proto";
+
+message Example {
+  option (custom.custom) = {target: true};
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+package custom;
+
+option go_package = "github.com/imura-tatsuya-ab/protoc-gen-option-example/custom";
+
+import "google/protobuf/descriptor.proto";
+
+message MessageCustomOptions {
+  bool target = 1;
+}
+
+extend google.protobuf.MessageOptions {
+  MessageCustomOptions custom = 50000;
+}
