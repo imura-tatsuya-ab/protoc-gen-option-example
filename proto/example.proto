@@ -5,6 +5,17 @@ option go_package = "github.com/imura-tatsuya-ab/protoc-gen-option-example/proto
 
 import "custom/custom.proto";
 
-message Example {
+message Example1 {
   option (custom.custom) = {target: true};
+}
+
+message Example2 {
+  option (custom.custom) = {target: false};
+}
+
+message Example3 {
+  option (custom.custom) = {target: true};
+}
+
+message Example4 {
 }

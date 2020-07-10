@@ -26,14 +26,14 @@ const (
 // of the legacy proto package is being used.
 const _ = proto.ProtoPackageIsVersion4
 
-type Example struct {
+type Example1 struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 }
 
-func (x *Example) Reset() {
-	*x = Example{}
+func (x *Example1) Reset() {
+	*x = Example1{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_example_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -41,13 +41,13 @@ func (x *Example) Reset() {
 	}
 }
 
-func (x *Example) String() string {
+func (x *Example1) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Example) ProtoMessage() {}
+func (*Example1) ProtoMessage() {}
 
-func (x *Example) ProtoReflect() protoreflect.Message {
+func (x *Example1) ProtoReflect() protoreflect.Message {
 	mi := &file_example_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -59,9 +59,123 @@ func (x *Example) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Example.ProtoReflect.Descriptor instead.
-func (*Example) Descriptor() ([]byte, []int) {
+// Deprecated: Use Example1.ProtoReflect.Descriptor instead.
+func (*Example1) Descriptor() ([]byte, []int) {
 	return file_example_proto_rawDescGZIP(), []int{0}
+}
+
+type Example2 struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+}
+
+func (x *Example2) Reset() {
+	*x = Example2{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_example_proto_msgTypes[1]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *Example2) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*Example2) ProtoMessage() {}
+
+func (x *Example2) ProtoReflect() protoreflect.Message {
+	mi := &file_example_proto_msgTypes[1]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use Example2.ProtoReflect.Descriptor instead.
+func (*Example2) Descriptor() ([]byte, []int) {
+	return file_example_proto_rawDescGZIP(), []int{1}
+}
+
+type Example3 struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+}
+
+func (x *Example3) Reset() {
+	*x = Example3{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_example_proto_msgTypes[2]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *Example3) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*Example3) ProtoMessage() {}
+
+func (x *Example3) ProtoReflect() protoreflect.Message {
+	mi := &file_example_proto_msgTypes[2]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use Example3.ProtoReflect.Descriptor instead.
+func (*Example3) Descriptor() ([]byte, []int) {
+	return file_example_proto_rawDescGZIP(), []int{2}
+}
+
+type Example4 struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+}
+
+func (x *Example4) Reset() {
+	*x = Example4{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_example_proto_msgTypes[3]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *Example4) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*Example4) ProtoMessage() {}
+
+func (x *Example4) ProtoReflect() protoreflect.Message {
+	mi := &file_example_proto_msgTypes[3]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use Example4.ProtoReflect.Descriptor instead.
+func (*Example4) Descriptor() ([]byte, []int) {
+	return file_example_proto_rawDescGZIP(), []int{3}
 }
 
 var File_example_proto protoreflect.FileDescriptor
@@ -69,13 +183,16 @@ var File_example_proto protoreflect.FileDescriptor
 var file_example_proto_rawDesc = []byte{
 	0x0a, 0x0d, 0x65, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12,
 	0x07, 0x65, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x1a, 0x13, 0x63, 0x75, 0x73, 0x74, 0x6f, 0x6d,
-	0x2f, 0x63, 0x75, 0x73, 0x74, 0x6f, 0x6d, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x22, 0x11, 0x0a,
-	0x07, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x3a, 0x06, 0x82, 0xb5, 0x18, 0x02, 0x08, 0x01,
-	0x42, 0x3d, 0x5a, 0x3b, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x69,
-	0x6d, 0x75, 0x72, 0x61, 0x2d, 0x74, 0x61, 0x74, 0x73, 0x75, 0x79, 0x61, 0x2d, 0x61, 0x62, 0x2f,
-	0x70, 0x72, 0x6f, 0x74, 0x6f, 0x63, 0x2d, 0x67, 0x65, 0x6e, 0x2d, 0x6f, 0x70, 0x74, 0x69, 0x6f,
-	0x6e, 0x2d, 0x65, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x62,
-	0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x2f, 0x63, 0x75, 0x73, 0x74, 0x6f, 0x6d, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x22, 0x12, 0x0a,
+	0x08, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x31, 0x3a, 0x06, 0x82, 0xb5, 0x18, 0x02, 0x08,
+	0x01, 0x22, 0x10, 0x0a, 0x08, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x32, 0x3a, 0x04, 0x82,
+	0xb5, 0x18, 0x00, 0x22, 0x12, 0x0a, 0x08, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x33, 0x3a,
+	0x06, 0x82, 0xb5, 0x18, 0x02, 0x08, 0x01, 0x22, 0x0a, 0x0a, 0x08, 0x45, 0x78, 0x61, 0x6d, 0x70,
+	0x6c, 0x65, 0x34, 0x42, 0x3d, 0x5a, 0x3b, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f,
+	0x6d, 0x2f, 0x69, 0x6d, 0x75, 0x72, 0x61, 0x2d, 0x74, 0x61, 0x74, 0x73, 0x75, 0x79, 0x61, 0x2d,
+	0x61, 0x62, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x63, 0x2d, 0x67, 0x65, 0x6e, 0x2d, 0x6f, 0x70,
+	0x74, 0x69, 0x6f, 0x6e, 0x2d, 0x65, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x2f, 0x70, 0x72, 0x6f,
+	0x74, 0x6f, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -90,9 +207,12 @@ func file_example_proto_rawDescGZIP() []byte {
 	return file_example_proto_rawDescData
 }
 
-var file_example_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file_example_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
 var file_example_proto_goTypes = []interface{}{
-	(*Example)(nil), // 0: example.Example
+	(*Example1)(nil), // 0: example.Example1
+	(*Example2)(nil), // 1: example.Example2
+	(*Example3)(nil), // 2: example.Example3
+	(*Example4)(nil), // 3: example.Example4
 }
 var file_example_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
@@ -109,7 +229,43 @@ func file_example_proto_init() {
 	}
 	if !protoimpl.UnsafeEnabled {
 		file_example_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*Example); i {
+			switch v := v.(*Example1); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_example_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*Example2); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_example_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*Example3); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_example_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*Example4); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -127,7 +283,7 @@ func file_example_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_example_proto_rawDesc,
 			NumEnums:      0,
-			NumMessages:   1,
+			NumMessages:   4,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
